@@ -1,0 +1,746 @@
+/* Base Style CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+  background: var(--black);
+}
+
+/* Colors */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.primary-btn a {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--black);
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  border-radius: 10px;
+}
+
+/* Base Style CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+.nav-wrapper {
+  padding: 16px 0;
+  z-index: 999;
+}
+
+.sign-in-btn.primary-btn a {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  background: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding: 250px 0 160px;
+  margin-top: -80px;
+}
+
+.hero-wrapper::after {
+  position: absolute;
+  content: "";
+  max-width: 569px;
+  width: 100%;
+  max-height: 569px;
+  height: 100%;
+  left: -300px;
+  bottom: -300px;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.2;
+  filter: blur(188.95px);
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 112%;
+  text-transform: capitalize;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--gray-300);
+  margin-bottom: 55px;
+}
+
+/* Hero Section CSS End */
+
+/* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Power Section CSS Start */
+
+.power-wrapper {
+  padding: 80px 0 100px;
+}
+
+.power-top {
+  max-width: 780px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.power-top h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.power-top h2 span {
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.power-top p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--gray-400);
+}
+
+.power-img {
+  padding-top: 50px;
+  z-index: 1;
+}
+
+.power-img::before {
+  position: absolute;
+  content: "";
+  width: 742px;
+  height: 742px;
+  left: calc(50% - 742px / 2);
+  top: calc(50% - 742px / 2);
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.4;
+  filter: blur(106.05px);
+  z-index: -1;
+}
+
+.power-img::after {
+  position: absolute;
+  content: "";
+  width: 806px;
+  height: 97px;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  filter: blur(12px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Power Section CSS End */
+
+/* Alien Section CSS Start */
+
+.alien-wrapper {
+  padding: 80px 0;
+}
+
+.alien-text {
+  position: relative;
+  background: var(--black);
+  background-clip: padding-box;
+  padding: 30px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+
+.alien-text::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.alien-text p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.alien-img {
+  padding-left: 40px;
+}
+
+.alien-img img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Alien Section CSS End */
+
+/* Reference Section CSS Start */
+
+.reference-wrapper {
+  padding: 80px 0;
+}
+
+.reference-wrapper::before {
+  position: absolute;
+  content: "";
+  max-width: 569px;
+  width: 100%;
+  max-height: 569px;
+  height: 100%;
+  top: -300px;
+  left: -300px;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.2;
+  filter: blur(188.95px);
+}
+
+.reference-title {
+  max-width: 780px;
+  margin: auto;
+  text-align: center;
+}
+
+.reference-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.reference-title h2 span {
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.reference-container {
+  margin-top: 50px;
+}
+
+.reference-left-img {
+  padding-right: 80px;
+}
+
+.reference-left-img > img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 312px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.reference-arrow {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+}
+
+.reference-right-img1 {
+  position: relative;
+  z-index: 3;
+}
+
+.reference-right-img1 img {
+  max-width: 333px;
+  width: 100%;
+  max-height: 190px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.reference-right-img2 {
+  position: absolute;
+  top: 170px;
+  left: 100px;
+  z-index: 2;
+}
+
+.reference-right-img2 img {
+  max-width: 240px;
+  width: 100%;
+  max-height: 140px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.reference-right-img3 {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  z-index: 1;
+}
+
+.reference-right-img3 img {
+  max-width: 298px;
+  width: 100%;
+  max-height: 199px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Reference Section CSS End */
+
+/* Choose Style Section CSS Start */
+
+.choose-style-wrapper {
+  padding: 80px 0;
+}
+
+.choose-style-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.2;
+  filter: blur(188.95px);
+  z-index: -1;
+}
+
+.choose-style-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-right: 40px;
+}
+
+.choose-style-images img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.choose-style-content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.choose-style-content h2 span {
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.choose-style-content ul {
+  padding: 37px 0 60px;
+}
+
+.choose-style-content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--white);
+  padding: 20px 30px;
+  margin-top: 23px;
+  background: linear-gradient(
+    94.29deg,
+    rgba(184, 211, 250, 0.3) 0%,
+    rgba(189, 165, 248, 0.3) 51.59%,
+    rgba(225, 158, 180, 0.3) 100%
+  );
+  border-radius: 10px;
+}
+
+.choose-style-content ul li img {
+  width: 35px;
+  margin-right: 20px;
+}
+
+/* Choose Style Section CSS End */
+
+/* Create Section CSS Start */
+
+.create-wrapper {
+  padding: 200px 0;
+}
+
+.create-content-container {
+  height: 100%;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  border-radius: 50px 0 0 50px;
+}
+
+.create-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 60px;
+}
+
+.create-content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.create-content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.try-now-btn {
+  max-width: 165px;
+  text-align: center;
+  background: var(--black);
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.try-now-btn.primary-btn a {
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.create-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 50px 50px 0;
+}
+
+.create-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Create Section CSS End */
+
+/* Imagination Section CSS Start */
+
+.imagination-wrapper {
+  padding-bottom: 80px;
+}
+
+.imagination-wrapper::before,
+.imagination-wrapper::after {
+  position: absolute;
+  content: "";
+  max-width: 569px;
+  width: 100%;
+  max-height: 569px;
+  height: 100%;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.2;
+  filter: blur(188.95px);
+}
+
+.imagination-wrapper::before {
+  top: -350px;
+  left: -350px;
+}
+
+.imagination-wrapper::after {
+  left: -500px;
+  bottom: 0px;
+}
+
+.imagination-title {
+  max-width: 716px;
+}
+
+.imagination-title h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 40px;
+}
+
+.imagination-img img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.imagination-content p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--gray-400);
+  padding-bottom: 40px;
+}
+
+/* Imagination Section CSS End */
+
+/* Artificial Intelligence Section CSS Start */
+
+.ai-wrapper {
+  padding: 80px 0;
+}
+
+.ai-top {
+  max-width: 890px;
+  margin: auto;
+  text-align: center;
+}
+
+.ai-top h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.ai-top h2 span {
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.ai-top h4 {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--gray-400);
+}
+
+.ai-img {
+  max-width: 834px;
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.ai-img img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 560px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Artificial Intelligence Section CSS End */
+
+/* Sign Up Section CSS Start */
+
+.sign-up-wrapper {
+  padding: 80px 0;
+}
+
+.sign-up-wrapper::before,
+.sign-up-wrapper::after {
+  position: absolute;
+  content: "";
+  max-width: 400px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  opacity: 0.2;
+  filter: blur(188.95px);
+}
+
+.sign-up-wrapper::before {
+  top: -450px;
+}
+
+.sign-up-wrapper::after {
+  top: -150px;
+}
+
+.sign-up-container {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  border-radius: 20px;
+}
+
+.sign-up-content {
+  max-width: 670px;
+  margin: auto;
+  text-align: center;
+}
+
+.sign-up-content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.sign-up-content p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.start-btn {
+  max-width: 230px;
+  margin: auto;
+  text-align: center;
+  background: var(--black);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.start-btn a {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #9fedff 0%, #c499ff 46.7%, #fea1a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Sign Up Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Part CSS Start */
+
+.footer-wrapper {
+  background: linear-gradient(
+    94.29deg,
+    rgba(184, 211, 250, 0.04) 0%,
+    rgba(189, 165, 248, 0.04) 51.59%,
+    rgba(225, 158, 180, 0.04) 100%
+  );
+}
+
+.footer-container {
+  padding: 30px 0 60px;
+  border-top: 1px solid #464547;
+}
+
+.copyright p {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.footer-social ul li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  border: 1px solid #464446;
+  border-radius: 100%;
+}
+
+/* Footer Part CSS End */
