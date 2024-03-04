@@ -77,7 +77,8 @@ img {
   background: url(../images/hero-bg.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  padding: 250px 0 160px;
+  background-size: 60%;
+  padding: 250px 0 250px;
   margin-top: -80px;
 }
 
